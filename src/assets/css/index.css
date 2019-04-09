@@ -1,0 +1,421 @@
+/*通用样式*/
+
+.bigBox {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.bigBox .container {
+    flex: 1;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+}
+
+.tap:active {
+    background-color: #ccc !important;
+}
+
+.br {
+    color: #f4551b;
+}
+
+.c-diy {
+    color: #fc6d04 !important;
+}
+
+.c1-diy {
+    color: #f49b1b !important;
+}
+
+.ac-diy {
+    color: #31af45 !important;
+}
+
+.b-diy {
+    border: 1px solid #05f37b;
+}
+
+.bt-diy {
+    border-top: 1px solid #31af45;
+}
+
+.bb-diy {
+    border-bottom: 1px solid #1ad8bb;
+}
+
+.bl-diy {
+    border-left: 1px solid #31af45;
+}
+
+.br-diy {
+    border-right: 1px solid #31af45;
+}
+
+.bg-diy {
+    background-color: #f49b1b;
+}
+
+.c-diy2 {
+    color: #f4a137;
+}
+
+.bg-diy2 {
+    background-color: #ff7537;
+}
+
+.c-diy3 {
+    color: #fd4343;
+}
+
+.mask {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 99;
+}
+
+.tipBox {
+    width: 5.46rem;
+    display: flex;
+    position: fixed;
+    top: 33%;
+    left: 50%;
+    z-index: 999;
+    margin-left: -2.73rem;
+}
+
+.arrow_icon {
+    width: 0.12rem;
+    height: 0.22rem;
+}
+
+.modal {
+    position: fixed;
+    width: 80%;
+    left: 10%;
+    z-index: 100;
+}
+
+.circle {
+    width: 0.36rem;
+    height: 0.36rem;
+}
+
+.circle>img {
+    width: 0.36rem;
+    height: 0.36rem;
+    display: none;
+}
+
+.pay-type:checked+.circle>img {
+    display: block;
+}
+
+.arrow-icon {
+    height: 0.22rem;
+    width: 0.12rem;
+}
+
+.upload-icon {
+    width: 0.6rem;
+    height: 0.6rem;
+}
+
+.logo {
+    width: 1rem;
+    height: 1rem;
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 0.05rem solid transparent;
+    border-right: 0.05rem solid transparent;
+    border-top: 0.1rem solid #bbb;
+}
+
+.empty-icon {
+    width: 1.8rem;
+}
+
+.shop-pic {
+    width: 1.1rem;
+    height: 1.1rem;
+}
+
+.navigate-icon {
+    width: 0.18rem;
+}
+
+.location-icon {
+    width: 0.15rem;
+}
+
+.main_btn,
+.pay_btn {
+    border-radius: 0.2rem;
+    background: #f49b1b;
+    margin: 0.8rem auto 0;
+    width: 6.9rem;
+    height: 0.81rem;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+}
+
+
+/*
+.list:last-child {
+    border-bottom: none;
+}*/
+
+.hide {
+    display: none !important;
+}
+
+
+/*加减运算*/
+
+.count .minus,
+.count .add {
+    width: 0.48rem;
+    height: 0.48rem;
+    border: 1px solid #ccc;
+    border-radius: 0.08rem;
+    color: #999;
+}
+
+.count .num {
+    width: 0.6rem;
+    height: 0.48rem;
+    color: #999;
+}
+
+
+/*加载中效果*/
+
+#loading {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    margin-top: 0px;
+    top: 0px;
+}
+
+#loading-center {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#loading-center-absolute {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 150px;
+    width: 150px;
+    margin-top: -75px;
+    margin-left: -75px;
+    -moz-border-radius: 50% 50% 50% 50%;
+    -webkit-border-radius: 50% 50% 50% 50%;
+    border-radius: 50% 50% 50% 50%;
+}
+
+.object {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    position: absolute;
+    -moz-border-radius: 50% 50% 50% 50%;
+    -webkit-border-radius: 50% 50% 50% 50%;
+    border-radius: 50% 50% 50% 50%;
+    -webkit-animation: animate 0.8s infinite;
+    animation: animate 0.8s infinite;
+}
+
+#object_one {
+    top: 19px;
+    left: 19px;
+}
+
+#object_two {
+    top: 0px;
+    left: 65px;
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+}
+
+#object_three {
+    top: 19px;
+    left: 111px;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+#object_four {
+    top: 65px;
+    left: 130px;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+#object_five {
+    top: 111px;
+    left: 111px;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+#object_six {
+    top: 130px;
+    left: 65px;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+
+#object_seven {
+    top: 111px;
+    left: 19px;
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+
+#object_eight {
+    top: 65px;
+    left: 0px;
+    -webkit-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+}
+
+@-webkit-keyframes animate {
+    25% {
+        -ms-transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+    75% {
+        -ms-transform: scale(0);
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+}
+
+@keyframes animate {
+    50% {
+        -ms-transform: scale(1.5, 1.5);
+        -webkit-transform: scale(1.5, 1.5);
+        transform: scale(1.5, 1.5);
+    }
+    100% {
+        -ms-transform: scale(1, 1);
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+}
+
+
+/*layer弹出层*/
+
+.layui-m-layer0 .layui-m-layerchild {
+    width: 90%;
+    max-width: 6rem !important;
+}
+
+.layui-m-layerbtn {
+    background-color: #fff !important;
+}
+
+.layui-m-layerbtn span[yes] {
+    color: #d51719 !important;
+}
+
+.choseInput:checked+.circle {
+    border: 1px solid #fff;
+}
+
+.choseInput:checked+.circle>img {
+    display: block;
+}
+
+.circle {
+    width: 0.4rem;
+    height: 0.4rem;
+    border: 1px solid #e5e5e5;
+    border-radius: 50%;
+}
+
+.weui-dialog__btn_primary {
+    color: #f49b1b !important;
+}
+
+
+/* swiper */
+
+.swiper-slide {
+    padding: 0.2rem !important;
+    width: 100%;
+    text-align: center;
+}
+
+.swiper-container .swiper-pagination-bullet {
+    width: 26px !important;
+    height: 8px;
+    display: inline-block;
+    border-radius: 5px;
+    background: #fff !important;
+    opacity: 0.2;
+}
+
+.swiper-container .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #fff !important;
+}
+
+
+/* 选择 */
+
+.circle {
+    width: 0.44rem;
+    height: 0.44rem;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+
+.checkInput:checked+.circle {
+    background: url("../img/ic_gouxuan.png") no-repeat;
+    background-size: 100% 100%;
+    border: 0;
+}
+
+.noImg {
+    width: 1.95rem;
+    height: 2.01rem;
+}
+
+
+/* 图片上传 */
+
+.removeBtn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    border-radius: 50%;
+    width: 0.3rem;
+    height: 0.3rem;
+    font-size: 0.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
